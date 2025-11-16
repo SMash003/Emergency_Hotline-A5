@@ -87,6 +87,7 @@ document.getElementById("clear-btn").addEventListener("click", function(e)
 
 // Copy button functionality
 const copyBtns = document.getElementsByClassName("copy-btn");
+let totalCopy = getInnerText("total-copy");
 
 for(let copyBtn of copyBtns){
   copyBtn.addEventListener("click", function(e){
@@ -96,5 +97,8 @@ for(let copyBtn of copyBtns){
     let card = copyBtn.closest(".card");
     let number = card.querySelector(".service-num").innerText;
     navigator.clipboard.writeText(number);
+    totalCopy = totalCopy + 1;
+    setInnerText("total-copy", totalCopy);
+    
   })
 }
