@@ -39,8 +39,8 @@
                 <p id="total-coins" class="text-lg md:text-xl font-extrabold">100</p>
                 <img class="h-6 md:h-7" src="assets/coin.png" alt="">
             </div>
-            <div class="flex gap-2.5 px-7 md:px-9 py-3.5 border-4 border-red-600 bg-[#00A63E] rounded-[50px]">
-                <p class="text-lg md:text-xl text-white whitespace-nowrap">2 Copy</p>
+            <div class="flex gap-2.5 px-7 md:px-9 py-3.5 bg-[#00A63E] rounded-[50px]">
+                <p class="text-lg md:text-xl text-white whitespace-nowrap"><span id="total-copy">0</span> Copy</p>
             </div>
         </div>
     </nav>
@@ -73,7 +73,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">সার্বজনীন</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -98,7 +98,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">পুলিশ</p>
                 </div>
                                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -123,7 +123,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">ফায়ার</p>
                 </div>
                                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -148,7 +148,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">স্বাস্থ্য</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -173,7 +173,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">সহায়তা</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -198,7 +198,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">সরকারি</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -223,7 +223,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">বিদ্যুৎ</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -248,7 +248,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">এনজিও</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -273,7 +273,7 @@
                     <p class="px-4 py-1.5 w-24 text-center text-[#5C5C5C] bg-[#F2F2F2] rounded-full">পরিবহন</p>
                 </div>
                 <div class="flex justify-between gap-1 pt-6">
-                    <div class="w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
+                    <div class="copy-btn w-44 h-10 border-2 border-[#5C5C5C]/30 flex items-center justify-center rounded-[8px] gap-1">
                         <i class="fa-regular fa-clone text-[#5C5C5C] text-xl"></i>
                         <p class="text-[#5C5C5C] font-semibold text-xl">Copy</p>
                     </div>
@@ -286,26 +286,19 @@
          </div>
 
          <!-- cards section right side -->
-         <div class=" bg-white rounded-2xl p-6">
+         <div  class=" bg-white rounded-2xl p-6">
             <div class="flex justify-between items-center gap-24 mb-4">
                 <div class="flex items-center gap-1">
                     <i class="fa-regular fa-clock h-6 text-[#5C5C5C] text-xl"></i>
                     <p class="text-[#111111] text-xl font-medium whitespace-nowrap">Call History</p>
                 </div>
-                <div class="px-9 py-3.5 rounded-4xl bg-[#00A63E]">
+                <div id="clear-btn" class="px-9 py-3.5 rounded-4xl bg-[#00A63E]">
                     <p class="text-lg text-white">Clear</p>
                 </div>
             </div>
 
+            <div id="calling-history">
 
-            <div class="flex items-center justify-between bg-[#FAFAFA] p-4  rounded-lg ">
-                <div>
-                    <p class="text-lg font-normal">জাতীয় জরুরি সেবা</p>
-                    <p class="text-[#5C5C5C]">999</p>
-                </div>
-                <div>
-                    <p class="text-lg font-normal">11:36:58 AM</p>
-                </div>
             </div>
          </div>
     </section>

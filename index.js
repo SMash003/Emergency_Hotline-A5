@@ -1,3 +1,5 @@
+const callingHistory = [];
+
 // funcion to get innet Text
 
 
@@ -28,6 +30,8 @@ for (let heart of hearts) {
 
 // call button functionality
 const callBtns = document.getElementsByClassName("call-btn");
+const callingHis = document.getElementById("calling-history");
+callingHis.innerText = ""
 
 for(let callBtn of callBtns){
   callBtn.addEventListener("click", function(e){
@@ -42,10 +46,51 @@ for(let callBtn of callBtns){
     }
     else
     {
-      console.log(serviceName)
       alert("Calling...\n" + serviceName +"\n"+ serviceNum);
       const totalCoins = availableCoins - 20;
       setInnerText("total-coins", totalCoins);
+
+      const data = {
+        serName: serviceName,
+        serNum: serviceNum,
+        time: new Date().toLocaleTimeString()
+      }
+
+      callingHistory.push(data);
+
+      const div = document.createElement("div")
+      div.innerHTML = 
+      `
+        <div class="flex items-center justify-between bg-[#FAFAFA] p-4  rounded-lg mt-4">
+          <div>
+              <p class="text-lg font-normal">${data.serName}</p>
+              <p class="text-[#5C5C5C]">${data.serNum}</p>
+          </div>
+          <div>
+              <p class="text-lg font-normal">${data.time}</p>
+          </div>
+        </div>
+      `
+
+      callingHis.appendChild(div);
     }
   });
+}
+
+// "Clear" button functionality
+document.getElementById("clear-btn").addEventListener("click", function(e)
+{
+  e.preventDefault();
+  callingHistory.length = 0;  
+  document.getElementById("calling-history").innerHTML = "";
+})
+
+// Copy button functionality
+const copyBtns = document.getElementsByClassName("copy-btn");
+
+for(let copyBtn of copyBtns){
+  copyBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    alert("Number copied to clipboard.")
+  })
 }
