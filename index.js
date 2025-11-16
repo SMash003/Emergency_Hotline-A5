@@ -92,5 +92,9 @@ for(let copyBtn of copyBtns){
   copyBtn.addEventListener("click", function(e){
     e.preventDefault();
     alert("Number copied to clipboard.")
+
+    let card = copyBtn.closest(".card");
+    let number = card.querySelector(".service-num").innerText;
+    navigator.clipboard.writeText(number);
   })
 }
